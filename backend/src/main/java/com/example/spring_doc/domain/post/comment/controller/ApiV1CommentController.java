@@ -90,7 +90,7 @@ public class ApiV1CommentController {
 
     @Operation(
             summary = "댓글 수정",
-            description = "게시글의 댓글을 수정합니다."
+            description = "게시글의 댓글을 수정합니다.123123"
     )
     @PutMapping("{id}")
     @Transactional
