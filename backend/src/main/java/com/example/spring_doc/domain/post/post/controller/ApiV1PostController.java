@@ -51,7 +51,6 @@ public class ApiV1PostController {
         );
     }
 
-
     @Operation(
             summary = "글 목록 조회",
             description = "페이징 처리와 검색 가능"
@@ -71,6 +70,7 @@ public class ApiV1PostController {
         );
 
     }
+
 
     @Operation(
             summary = "내 글 목록 조회",
@@ -95,7 +95,6 @@ public class ApiV1PostController {
 
     }
 
-
     @Operation(
             summary = "글 단건 조회",
             description = "비밀글은 작성자만 조회 가능"
@@ -119,7 +118,6 @@ public class ApiV1PostController {
                 new PostWithContentDto(post)
         );
     }
-
 
     record WriteReqBody(@NotBlank String title,
                         @NotBlank String content,
@@ -146,7 +144,6 @@ public class ApiV1PostController {
                 new PostWithContentDto(post)
         );
     }
-
 
     record ModifyReqBody(@NotBlank String title, @NotBlank String content) {
     }

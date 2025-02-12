@@ -35,7 +35,9 @@ public class SecurityConfig {
                                 .requestMatchers("/api/*/**")
                                 .authenticated()
                                 .anyRequest()
-                                .authenticated()
+                                .permitAll()
+
+
                 )
                 .headers((headers) -> headers
                         .addHeaderWriter(new XFrameOptionsHeaderWriter(

@@ -16,6 +16,7 @@ import jakarta.validation.constraints.NotBlank;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
+
 @SecurityRequirement(name = "bearerAuth")
 @Tag(name = "ApiV1MemberController", description = "회원 관련 API")
 @RestController
@@ -80,6 +81,7 @@ public class ApiV1MemberController {
         );
     }
 
+    @Operation(summary = "로그아웃", description = "로그아웃 시 쿠키 삭제")
     @DeleteMapping("/logout")
     public RsData<Void> logout() {
 
