@@ -47,7 +47,7 @@ public class ApiV1CommentController {
 
     @Operation(
             summary = "댓글 상세",
-            description = "게시글의 댓글 상세 정보를 가져옵니다."
+            description = "게시글의 댓글 상세 정보를 가져옵니다.123"
     )
     @GetMapping("{id}")
     @Transactional(readOnly = true)
